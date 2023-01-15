@@ -1,0 +1,142 @@
+/*To make every element in the page abide by the border-box box sizing */
+
+/*here we are saying: in the total document we want the box sizing to be border-box */
+html {
+ box-sizing: border-box;
+  font-family: karla;
+  font-size: 16px;
+  font-weight: 400;
+ }
+
+body {
+  padding: 20px; 
+}
+
+h2, h4, p {
+  margin: 0;
+}
+
+/*here we are saying: We want to grab any other element and inherit root level box-sizing */
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+
+#card {
+  width: 600px; /*eyeballing it */
+  height: 400px; /*eyeballing it */
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35); 
+  border-radius: 8px;
+  overflow: hidden;
+ 
+}
+
+#top-section {
+  width: 100%;
+  height: 45%; /*eyeballing it, looking at the card ratio */
+  padding: 25px;
+ }
+
+#bottom-section {
+   width: 100%;
+  height: 55%; /* the other 40% in top section */
+  color: white;
+}
+
+#bottom-left-section {
+  display: inline-block;
+  width: 50%;
+  height: 100%; 
+  vertical-align: top;
+  background-color: #2BB3B1;
+  /*background-color: #2ab2af; este es el color que el saco, el que estoy usando es el que yo saque en paintnet*/
+  padding: 25px;
+}
+
+#bottom-right-section {
+  display: inline-block;
+  width: 50%;
+  height: 100%;  
+  vertical-align: top;
+  background-color: #4ABEBD;
+  padding: 25px;
+  
+}
+
+#top-section h2 {
+   color: #1FA6A2;
+   margin-bottom: 20px;
+}
+
+#top-section h4 {
+  color: #BFD45D;
+  margin-bottom: 15px;
+}
+
+#top-section p {
+  color: #ABB2BC;
+}
+
+
+/*#bottom-right-section, #bottom-left-section, h4 div p {
+  color: white;
+} */
+
+button {
+  background-color: #BFDF32;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  
+  height: 50px;
+  margin-top:20px;
+   box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+  font-family: karla;
+  font-size: 1.03rem;
+}
+
+button:hover {
+   cursor: pointer;
+  background-color: #A8C42B;
+  transform: scale(1.04);
+}
+
+
+#price {
+ font-weight: 700;
+ font-size: 2rem;
+}
+
+#bottom-left-section h4 {
+   margin-bottom: 15px;
+   font-size: 1.2rem;
+}
+
+#price-frequency, #price {
+    display: inline-block;
+} 
+
+#price-frequency {
+   position: relative;
+   top: -5px; /*this is to bring up the "per month" a bit up  */
+   font-size: 0.8rem;
+   opacity: 0.7; /* 70% also acceptable*/
+  margin-left: 5px;
+} 
+
+#price-container {
+  margin-bottom: 10px;
+}
+
+#bottom-left-section p {
+   font-size: 0.8rem;
+}
+
+#bottom-right-section ul {
+   padding: 0;
+   list-style: none;
+   opacity: 0.8;
+  font-size: 0.8rem;
+}
+
